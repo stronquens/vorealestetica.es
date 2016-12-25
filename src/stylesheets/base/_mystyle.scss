@@ -1,0 +1,53 @@
+
+// My Styles
+body{
+    overflow-x: hidden;
+    font-family: "Lato", "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    font-size: 80%;
+    color: #3D3C40;
+}
+
+.intro{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    min-height: 500px;
+    background-color: #ccc;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    //background-attachment: fixed;
+    background-image: url(../images/sirena-intro-L.jpg);
+    .title {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        top: 20vh;
+        path {
+            fill: white;
+            fill-opacity: 0;
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            stroke: #{$title-color};
+            stroke-width: 1;
+        }
+        // Animacion escritura titulo
+        $step-time: 0;
+        @for $i from 1 through 15 {
+            path:nth-child(#{$i}) {
+                animation: writing 1.0s ease-in forwards #{$step-time}s;
+                $step-time: $step-time + 0.4;
+            }
+        }
+    }
+    .transition path {
+        fill: #{$title-color};
+    }
+}
+.about-company {
+    position: relative;
+    height: 600px;
+    background-color:#eeede9;
+}
