@@ -19,6 +19,9 @@
     top: initial;
     bottom: 0;
 }
+.transition--top {
+    top: 0;
+}
 // Writing svg
 @keyframes writing {
 	0% {

@@ -29,7 +29,7 @@ body{
         width: 80vw;
         // Estilos previos a animacion
         path {
-            fill: white;
+            fill: #{$title-color};
             fill-opacity: 0;
             stroke-dasharray: 1000;
             stroke-dashoffset: 1000;
@@ -46,11 +46,59 @@ body{
         }
     }
     .transition path {
-        fill: #{$title-color};
+        fill:#{$primary-color};
     }
 }
-.about-company {
+.section2 {
+    position: relative;
+    background-color:#{$primary-color};
+
+    display: flex;
+    align-items: center;
+    //height: 100vh;
+    min-height: 600px;
+
+    .section2-container{
+        display: flex;
+        align-items: center;
+
+        padding: 0 1em;
+        margin-left: auto;
+        margin-right: auto;
+
+        .section2-photo{           
+            width: calc(99.99% * 1/2 - (30px - 30px * 1/2));
+            margin-right: 30px;
+
+            height: 300px;
+            background-color: brown;
+        }
+        .section2-text {       
+            width: calc(99.99% * 1/2 - (30px - 30px * 1/2));   
+            
+            h2 {
+                color: #847d75;
+                font-size: 2.375rem;
+                font-weight: 300;
+            }
+            p{
+                font-size: 1.5rem;
+                font-weight: 300;
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+                padding-left: 1em;
+                //border-left: solid 1px #d5c1a5;
+                border-left: solid 2px #cec3b5;
+            }
+        }
+    }
+
+}
+.section3 {
     position: relative;
     height: 600px;
-    background-color:#eeede9;
+
+    .transition path {
+        fill:#{$primary-color};
+    }
 }
