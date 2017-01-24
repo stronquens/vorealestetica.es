@@ -46,19 +46,19 @@ body{
         }
     }
     .transition path {
-        fill:#{$primary-color};
+        fill:#{$secondary-color};
     }
 }
-.section2 {
+.preguntas {
     position: relative;
-    background-color:#{$primary-color};
+    background-color:#{$secondary-color};
 
     display: flex;
     align-items: center;
     //height: 100vh;
     min-height: 600px;
 
-    .section2-container{
+    .preguntas-container{
         display: flex;
         align-items: center;
 
@@ -66,16 +66,28 @@ body{
         margin-left: auto;
         margin-right: auto;
 
-        .section2-photo{           
-            width: calc(99.99% * 1/2 - (30px - 30px * 1/2));
-            margin-right: 30px;
-
-            height: 300px;
-            background-color: brown;
-        }
-        .section2-text {       
+        .pregunta-que-somos {       
             width: calc(99.99% * 1/2 - (30px - 30px * 1/2));   
-            
+            text-align: right;
+            margin-right: 0.5em;
+
+            h2 {
+                color: #847d75;
+                font-size: 2.375rem;
+                font-weight: 300;
+            }
+            p{
+                font-size: 1.5rem;
+                font-weight: 300;
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+                padding-right: 1em;
+                border-right: solid 2px #cec3b5;
+            }
+        }
+        .pregunta-que-hacemos {       
+            width: calc(99.99% * 1/2 - (30px - 30px * 1/2));   
+            margin-left: 0.5em;
             h2 {
                 color: #847d75;
                 font-size: 2.375rem;
@@ -94,11 +106,35 @@ body{
     }
 
 }
-.section3 {
+.image-parallax {
     position: relative;
-    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+    background-image: url(../images/beach.jpg);
+    height: 700px;
 
     .transition path {
+        fill:#{$secondary-color};
+    }
+    .transition:last-child path {
         fill:#{$primary-color};
+    }
+}
+.caracteristicas {
+    position: relative;
+    background-color: #{$primary-color};
+    height: 600px;
+
+    .card {
+        display: inline-block;
+        background-color: white;
+        height: 300px;
+        width: 20%;
+    }
+
+    .transition path {
+        fill:#{$secondary-color};
     }
 }
