@@ -25,4 +25,22 @@
       height: 400px;
   }
 
+  .caracteristicas .cards-container .card {
+    width: 90%;
+    margin: 5%;
+    height: 300px;
+  }
+}
+
+// Optional min-device-width
+// **** Tablet ****
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px)  {
+
+       .caracteristicas .cards-container .card {
+          width: 40%;
+          margin: 5%;
+          height: 300px;
+      }
 }
