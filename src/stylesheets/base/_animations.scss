@@ -35,3 +35,29 @@
         fill-opacity: 1;
 	}
 }
+// Arrow down
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes vertical {
+	0% {
+		top: 60vh;
+	}
+    25% {
+		top: 59.7vh;
+	}
+    50% {
+		top: 60vh;
+	}
+    75% {
+		top: 60.3vh;
+	}
+    100% {
+        top: 60vh;
+    }
+}
