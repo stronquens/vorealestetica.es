@@ -7,13 +7,14 @@
       top: 10vh;
     }
   }
-  .preguntas {
-    .preguntas-container {
+  .preguntas, .contacto {
+    .preguntas-container, .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-      .pregunta-que-somos, .pregunta-que-hacemos {
+      .pregunta-que-somos, .pregunta-que-hacemos, 
+      .text-contacto, .text-comercial {
         margin: 0;
         width: 90%;
       }
@@ -40,8 +41,8 @@
     }
   }
 
-  .contacto {
-    
+  .contacto .text-contacto{
+    order: 2;
   }
 }
 
