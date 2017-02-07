@@ -6,6 +6,10 @@
     .title {
       top: 10vh;
     }
+    .arrow-down {
+      //top: 50vh;
+      animation: vertical-mobile 1.2s linear infinite;
+    }
   }
   .preguntas, .contacto {
     .preguntas-container, .container {
@@ -25,13 +29,16 @@
       background-image: url(../images/beach.jpg);
       height: 400px;
   }
-
-  .caracteristicas .cards-container .card {
-    width: 90%;
-    margin: 5%;
-    height: 300px;
+  .caracteristicas {
+    h2 {
+      margin-top: 2em;
+    }
+    .cards-container .card {
+      width: 90%;
+      margin: 10px;
+      height: 300px;
+    }
   }
-
   .servicios {
     .content h2 {
       margin-top: 4em;
@@ -41,8 +48,11 @@
     }
   }
 
-  .contacto .text-contacto{
-    order: 2;
+  .contacto .container .text-contacto{
+    order: 2;margin:5em;
+  }
+  .contacto .form-style-4 {
+    margin: 2em;
   }
 }
 

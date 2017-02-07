@@ -13,6 +13,7 @@
     top: 0;
     left: 0;
     -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
 .transition--bottom {
@@ -59,5 +60,22 @@
 	}
     100% {
         top: 60vh;
+    }
+}
+@keyframes vertical-mobile {
+	0% {
+		top: 50vh;
+	}
+    25% {
+		top: 49.7vh;
+	}
+    50% {
+		top: 50vh;
+	}
+    75% {
+		top: 50.3vh;
+	}
+    100% {
+        top: 50vh;
     }
 }

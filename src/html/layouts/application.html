@@ -1,10 +1,13 @@
 {% from 'macros/helpers.html' import sprite %}
 <!doctype html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes" />    
     <title>{% block title %}{{ title }}{% endblock %}</title>
+    <meta name="description" content="Empresa de servicios con maquinaria medico estetica para centros">
+    <meta name="theme-color" content="#576E86">
+    <link rel="icon" href="./images/icon.png">
     <link rel="stylesheet" href="stylesheets/app.css">
     {% include "shared/app-icons.html" %}
     {% block head %}{% endblock %}

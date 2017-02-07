@@ -11,3 +11,16 @@ $title-color: white;
 $primary-color: #eeede9;
 $secondary-color: white;
 $third-color: #cec3b5;
+
+// Mixins
+$prefixes: "webkit", "moz", "ms", "o", "none";
+@mixin prefix($property, $arguments) {
+ @each $prefix in $prefixes {
+   @if $prefix == "none" {
+     #{$property}: $arguments;
+   } @else {
+     -#{$prefix}-#{$property}: $arguments;
+   } 
+ }
+}
+//@include prefix(propiedad, valor);
