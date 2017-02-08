@@ -1,29 +1,14 @@
-{% from 'macros/helpers.html' import sprite %}
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes" />    
-    <title>{% block title %}{{ title }}{% endblock %}</title>
-    <meta name="description" content="Empresa de servicios con maquinaria medico estetica para centros">
-    <meta name="theme-color" content="#576E86">
-    <link rel="icon" href="./images/icon.png">
-    <link rel="stylesheet" href="stylesheets/app.css">
-    {% include "shared/app-icons.html" %}
-    {% block head %}{% endblock %}
-  </head>
-  <body>
-    {% block content %}{% endblock %}
-    {% block javascript %}
-      <script  type="text/javascript">
-       function adjust_textarea(h) {
+ function adjust_textarea(h) {
             h.style.height = "20px";
             h.style.height = (h.scrollHeight)+"px";
         }
         function currentYPosition() {
+            // Firefox, Chrome, Opera, Safari
             if (self.pageYOffset) return self.pageYOffset;
+            // Internet Explorer 6 - standards mode
             if (document.documentElement && document.documentElement.scrollTop)
                 return document.documentElement.scrollTop;
+            // Internet Explorer 6, 7 and 8
             if (document.body.scrollTop) return document.body.scrollTop;
             return 0;
         }
@@ -43,7 +28,7 @@
             if (distance < 100) {
                 scrollTo(0, stopY); return;
             }
-            var speed = Math.round(distance / 50);
+            var speed = Math.round(distance / 100);
             if (speed >= 20) speed = 20;
             var step = Math.round(distance / 25);
             var leapY = stopY > startY ? startY + step : startY - step;
@@ -59,7 +44,3 @@
                 leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
             }
         }
-      </script>
-    {% endblock %}
-  </body>
-</html>
