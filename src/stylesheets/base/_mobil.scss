@@ -7,8 +7,8 @@
       top: 10vh;
     }
     .arrow-down {
-      //top: 50vh;
-      animation: vertical-mobile 1.2s linear infinite;
+      top: 50vh;
+      animation: vertical 1.2s linear infinite;
     }
   }
   .preguntas, .contacto {
@@ -36,7 +36,7 @@
     .cards-container .card {
       width: 90%;
       margin: 10px;
-      height: 300px;
+      height: 310px;
     }
   }
   .servicios {
