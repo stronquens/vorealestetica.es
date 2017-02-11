@@ -13,6 +13,7 @@ body{
     position: relative;
     width: 100vw;
     height: 100vh;
+    min-height: 40em;
     
     background-color: #ccc;
     background-size: cover;
@@ -25,37 +26,19 @@ body{
         display: block ;    
         margin: 0 auto;
         width: 80vw;
-        // Estilos previos a animacion
-        path {
-            fill: #{$title-color};
-            fill-opacity: 0;
-            stroke-dasharray: 1000;
-            stroke-dashoffset: 1000;
-            stroke: #{$title-color};
-            stroke-width: 1;
-        }
-        // Animacion escritura titulo
-        $step-time: 0;
-        @for $i from 1 through 15 {
-            path:nth-child(#{$i}) {
-                -webkit-animation: writing 1.0s ease-in forwards #{$step-time}s;
-                animation: writing 1.0s ease-in forwards #{$step-time}s;
-                $step-time: $step-time + 0.4;
-            }
-        }
     }
     .arrow-down {
         position: relative;
         display: block ;    
         margin: 0 auto;
         width: 3em;
-        top: 55vh;
+        top: 50vh;
         animation: vertical 1.2s linear infinite;
         img {
             width: 3em;
             opacity: 0;
             animation: fadein 2s ease-in forwards;
-            animation-delay: 2s;
+            //animation-delay: 2s;
         }
     }
     .transition path {
