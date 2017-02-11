@@ -8,13 +8,123 @@
     <meta name="description" 
     content="Empresa de servicios con maquinaria médico estética para centros en las provincias de Valencia y Castellón.
     Contamos con máquinas de fotodepilación laser, cavitación, radiofrecuencia, dermapen y muchas mas.">
+    <meta name=”robots” content="Index,Follow">
+    <meta property="image" content="./images/preview.jpg">
     <meta name="theme-color" content="#576E86">
     <link rel="icon" href="./images/icon.png">
-    <link rel="stylesheet" type='text/css' href="stylesheets/app.css">
-    <link rel="stylesheet" type='text/css' href="stylesheets/fonts.css">
-    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Lato:400,300'>
+    <link rel="stylesheet" type='text/css' href="stylesheets/app.css" media="none" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" type='text/css' href="stylesheets/fonts.css" media="none" onload="if(media!='all')media='all'">
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Lato:400,300' media="none" onload="if(media!='all')media='all'">
     {% include "shared/app-icons.html" %}
     {% block head %}{% endblock %}
+    <style type="text/css">
+        body {
+        overflow-x: hidden;
+        font-family: "Lato", "Helvetica Neue", sans-serif;
+        font-weight: 300;
+        font-size: 80%; }
+
+        .intro {
+        overflow: hidden;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        min-height: 40em;
+        background-color: #ccc;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-image: url(./images/sirena-intro-L.jpg); }
+        .intro .title {
+            position: relative;
+            top: 20vh;
+            display: block;
+            margin: 0 auto;
+            width: 80vw; }
+        .intro .arrow-down {
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            width: 3em;
+            top: 50vh;
+            animation: vertical 1.2s linear infinite; }
+            .intro .arrow-down img {
+            width: 3em;
+            opacity: 0;
+            animation: fadein 2s ease-in forwards; }
+        .intro .transition path {
+            fill: white; }
+
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes vertical {
+            0% {
+                -webkit-transform: translate(0,0);
+                -moz-transform: translate(0,0);
+                -ms-transform: translate(0,0);
+                transform: translate(0,0);
+            }
+            25% {
+                -webkit-transform: translate(0,-0.3vh);
+                -moz-transform: translate(0,-0.3vh);
+                -ms-transform: translate(0,-0.3vh);
+                transform: translate(0,-0.3vh);
+            }
+            50% {
+                -webkit-transform: translate(0,0);
+                -moz-transform: translate(0,0);
+                -ms-transform: translate(0,0);
+                transform: translate(0,0);
+            }
+            75% {
+                -webkit-transform: translate(0,0.3vh);
+                -moz-transform: translate(0,0.3vh);
+                -ms-transform: translate(0,0.3vh);
+                transform: translate(0,0.3vh);
+            }
+            100% {
+                -webkit-transform: translate(0,0);
+                -moz-transform: translate(0,0);
+                -ms-transform: translate(0,0);
+                transform: translate(0,0);
+            }
+        }
+        .transition {
+        z-index: 110;
+        pointer-events: none;
+        display: block;
+        width: 100%;
+        height: auto; }
+
+        .transition--abs {
+        position: absolute;
+        top: 0;
+        left: 0;
+        -ms-transform: scale(1.05);
+        transform: scale(1.05); }
+
+        .transition--bottom {
+        top: initial;
+        bottom: 0; }
+
+        .transition--top {
+        top: 0; }
+
+        @media only screen and (max-width: 767px) {
+        .intro {
+            background-image: url(./images/sirena-intro-S.jpg); }
+            .intro .title {
+            top: 20vh; }
+            .intro .arrow-down {
+            top: 70vh;
+            animation: vertical 1.2s linear infinite; } }
+    </style>
   </head>
   <body>
     {% block content %}{% endblock %}

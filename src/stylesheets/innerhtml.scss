@@ -1,0 +1,82 @@
+@import "./base/variables";
+// My Styles
+body{
+    overflow-x: hidden;
+    font-family: "Lato", "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    font-size: 80%;
+}
+
+.intro{
+    overflow: hidden;
+
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    min-height: 40em;
+    
+    background-color: #ccc;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-image: url(../images/sirena-intro-L.jpg);
+    .title {
+        position: relative;
+        top: 20vh;
+        display: block ;    
+        margin: 0 auto;
+        width: 80vw;
+    }
+    .arrow-down {
+        position: relative;
+        display: block ;    
+        margin: 0 auto;
+        width: 3em;
+        top: 50vh;
+        animation: vertical 1.2s linear infinite;
+        img {
+            width: 3em;
+            opacity: 0;
+            animation: fadein 2s ease-in forwards;
+            //animation-delay: 2s;
+        }
+    }
+    .transition path {
+        fill:#{$secondary-color};
+    }
+}
+// Triangle svg
+.transition {
+    z-index: 110;
+    pointer-events: none;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.transition--abs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.transition--bottom {
+    top: initial;
+    bottom: 0;
+}
+.transition--top {
+    top: 0;
+}
+@media only screen and (max-width: 767px) {
+  .intro {
+    background-image: url(../images/sirena-intro-S.jpg);
+    .title {
+      top: 20vh;
+    }
+    .arrow-down {
+      top: 70vh;
+      animation: vertical 1.2s linear infinite;
+    }
+  }
+}

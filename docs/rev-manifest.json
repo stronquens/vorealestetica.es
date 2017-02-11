@@ -9,11 +9,17 @@
   "images/letras-intro.svg": "images/letras-intro-b714603eb9.svg",
   "images/mesoterapia-virtual.jpg": "images/mesoterapia-virtual-b5b53096ac.jpg",
   "images/money.jpg": "images/money-046a81af65.jpg",
+  "images/preview.jpg": "images/preview-7829e9f432.jpg",
   "images/sirena-intro-L.jpg": "images/sirena-intro-L-561a35ba0d.jpg",
   "images/sirena-intro-S.jpg": "images/sirena-intro-S-94a3524c41.jpg",
   "images/social-facebook.svg": "images/social-facebook-8be95a88c1.svg",
   "images/social-google-plus.svg": "images/social-google-plus-c525d6132d.svg",
   "images/social-linkedin.svg": "images/social-linkedin-de604b0cb6.svg",
   "images/social-twitter.svg": "images/social-twitter-f06a124b67.svg",
-  "stylesheets/app.css": "stylesheets/app-4a566de909.css"
+  "images/voreal-logo.svg": "images/voreal-logo-6278c57523.svg",
+  "javascripts/app.js": "javascripts/app-db11889f3969a7e1e2c3.js",
+  "stylesheets/app.css": "stylesheets/app-55210ce17d.css",
+  "stylesheets/fonts.css": "stylesheets/fonts-d41d8cd98f.css",
+  "stylesheets/innerhtml.css": "stylesheets/innerhtml-0981a54d70.css",
+  "stylesheets/svg.css": "stylesheets/svg-00f6c3098e.css"
 }

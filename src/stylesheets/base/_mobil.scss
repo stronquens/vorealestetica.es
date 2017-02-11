@@ -1,7 +1,7 @@
 
 // ****  Mobil ****
 @media only screen and (max-width: 767px) {
-  .intro {
+  /*.intro {
     background-image: url(../images/sirena-intro-S.jpg);
     .title {
       top: 20vh;
@@ -10,7 +10,7 @@
       top: 70vh;
       animation: vertical 1.2s linear infinite;
     }
-  }
+  }*/
   .preguntas, .contacto {
     .preguntas-container, .container {
         display: flex;
@@ -36,7 +36,7 @@
     .cards-container .card {
       width: 90%;
       margin: 10px;
-      height: 310px;
+      height: 350px;
     }
   }
   .servicios {

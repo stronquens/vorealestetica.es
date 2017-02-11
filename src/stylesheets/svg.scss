@@ -8,7 +8,20 @@ path {
     stroke: #{$title-color};
     stroke-width: 1;
 }
+
 // Animacion escritura titulo
+@keyframes writing {
+	0% {
+		stroke-dashoffset: 1000;
+	}
+    40%{
+        fill-opacity: 0
+    }
+	100% {
+		stroke-dashoffset: 0;
+        fill-opacity: 1;
+	}
+}
 $step-time: 0;
 @for $i from 1 through 15 {
     path:nth-child(#{$i}) {
