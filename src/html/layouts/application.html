@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes" />    
     <title>{% block title %}{{ title }}{% endblock %}</title>
     <meta name="description" 
-    content="Empresa de servicios con maquinaria médico estética para centros en las provincias de Valencia y Castellón.
+    content="Servicios con maquinaria médico estética en las provincias de Valencia y Castellón.
     Contamos con máquinas de fotodepilación laser, cavitación, radiofrecuencia, dermapen y muchas mas.">
-    <meta name=”robots” content="Index,Follow">
+    <meta name="robots" content="Index,Follow">
     <meta property="og:image" content="./images/preview.jpg">
     <meta name="theme-color" content="#576E86">
     <link rel="icon" href="./images/icon.png">
-    <link rel="stylesheet" type='text/css' href="stylesheets/app.css" media="none" onload="if(media!='all')media='all'">
-    <link rel="stylesheet" type='text/css' href="stylesheets/fonts.css" media="none" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" type='text/css' href="./stylesheets/app.css" media="none" onload="if(media!='all')media='all'">
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Lato:400,300' media="none" onload="if(media!='all')media='all'">
     {% include "shared/app-icons.html" %}
     {% block head %}{% endblock %}
@@ -29,32 +28,29 @@
         position: relative;
         width: 100vw;
         height: 100vh;
-        min-height: 40em;
-        background-color: #ccc;
+        min-height: 30em;
+        background-color: white;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: left bottom;
         background-image: url(./images/sirena-intro-L.jpg); }
         .intro .title {
-            position: relative;
-            top: 20vh;
-            display: block;
-            margin: 0 auto;
-            width: 80vw; }
+        position: relative;
+        top: 20vh;
+        display: block;
+        margin: 0 auto;
+        width: 80vw; }
         .intro .arrow-down {
-            position: relative;
-            display: block;
-            margin: 0 auto;
-            width: 3em;
-            top: 50vh;
-            animation: vertical 1.2s linear infinite; }
-            .intro .arrow-down img {
-            width: 3em;
-            opacity: 0;
-            animation: fadein 2s ease-in forwards; }
-        .intro .transition path {
-            fill: white; }
-
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 3em;
+        top: 50vh;
+        animation: vertical 1.2s linear infinite; }
+        .intro .arrow-down img {
+        width: 3em;
+        opacity: 0;
+        animation: fadein 2s ease-in forwards; }
         @keyframes fadein {
             0% {
                 opacity: 0;
@@ -100,7 +96,8 @@
         pointer-events: none;
         display: block;
         width: 100%;
-        height: auto; }
+        height: auto;
+        fill: white; }
 
         .transition--abs {
         position: absolute;
@@ -124,6 +121,7 @@
             .intro .arrow-down {
             top: 70vh;
             animation: vertical 1.2s linear infinite; } }
+        @font-face {font-family: "Amarillo";src: url('./fonts/Amarillo.ttf');}
     </style>
   </head>
   <body>
