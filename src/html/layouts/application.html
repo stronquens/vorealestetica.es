@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes" />    
     <title>{% block title %}{{ title }}{% endblock %}</title>
     <meta name="description" 
-    content="Servicios con maquinaria médico estética en las provincias de Valencia y Castellón.
-    Contamos con máquinas de fotodepilación laser, cavitación, radiofrecuencia, dermapen y muchas mas.">
+    content="Servicios con maquinaria médico estética en las provincias de Valencia y Castellón.">
     <meta name="robots" content="Index,Follow">
     <meta property="og:image" content="./images/preview.jpg">
     <meta name="theme-color" content="#576E86">
@@ -17,6 +16,8 @@
     {% include "shared/app-icons.html" %}
     {% block head %}{% endblock %}
     <style type="text/css">
+        @font-face {font-family: "Amarillo";src: url('./fonts/Amarillo.ttf');}
+        
         body {
         overflow-x: hidden;
         font-family: "Lato", "Helvetica Neue", sans-serif;
@@ -28,18 +29,20 @@
         position: relative;
         width: 100vw;
         height: 100vh;
-        min-height: 30em;
+        min-height: 25em;
         background-color: white;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: left bottom;
         background-image: url(./images/sirena-intro-L.jpg); }
+
         .intro .title {
         position: relative;
         top: 20vh;
         display: block;
         margin: 0 auto;
         width: 80vw; }
+
         .intro .arrow-down {
         position: relative;
         display: block;
@@ -47,10 +50,37 @@
         width: 3em;
         top: 50vh;
         animation: vertical 1.2s linear infinite; }
+
         .intro .arrow-down img {
         width: 3em;
         opacity: 0;
         animation: fadein 2s ease-in forwards; }
+
+        .transition {
+        z-index: 110;
+        pointer-events: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        fill: white; }
+
+        .intro .transition path {
+        fill: white;}
+
+        .transition--abs {
+        position: absolute;
+        top: 0;
+        left: 0;
+        -ms-transform: scale(1.05);
+        transform: scale(1.05); }
+
+        .transition--bottom {
+        top: initial;
+        bottom: 0; }
+
+        .transition--top {
+        top: 0; }
+
         @keyframes fadein {
             0% {
                 opacity: 0;
@@ -91,27 +121,6 @@
                 transform: translate(0,0);
             }
         }
-        .transition {
-        z-index: 110;
-        pointer-events: none;
-        display: block;
-        width: 100%;
-        height: auto;
-        fill: white; }
-
-        .transition--abs {
-        position: absolute;
-        top: 0;
-        left: 0;
-        -ms-transform: scale(1.05);
-        transform: scale(1.05); }
-
-        .transition--bottom {
-        top: initial;
-        bottom: 0; }
-
-        .transition--top {
-        top: 0; }
 
         @media only screen and (max-width: 767px) {
         .intro {
@@ -121,7 +130,6 @@
             .intro .arrow-down {
             top: 70vh;
             animation: vertical 1.2s linear infinite; } }
-        @font-face {font-family: "Amarillo";src: url('./fonts/Amarillo.ttf');}
     </style>
   </head>
   <body>
