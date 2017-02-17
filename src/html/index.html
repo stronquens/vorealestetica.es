@@ -136,12 +136,18 @@
 			</p>
 		</div>
 	</div>
-	<form class="form-style-4">
+	<form action="form.php" method="post" class="form-style-4">
 		<label for="name">
-			<span>Nombre</span><input id="name" type="text" value="Eva Maria Gomis Moreno" readonly="readonly" name="name" required>
+			<span>Nombre</span><input id="name" type="text" name="name" required>
 		</label>
 		<label for="email">
-			<span>Email</span><input id="email" value="e.gomis15@hotmail.es" readonly="readonly" type="email" name="mail" required>
+			<span>Email</span><input id="email" type="email" name="email" required>
+		</label>
+		<label for="field4">
+			<span>Mensaje</span><textarea name="comments" onkeyup="adjust_textarea(this)" required="true"></textarea>
+		</label>
+		<label>
+			<input type="submit" value="Enviar" />
 		</label>
 	</form>
 </section>
