@@ -1,3 +1,8 @@
+This project require node 6 for run gulp.
+All the resources are copyright from Voreal Estética.
+For use the images you need to pay for the license to the author.
+
+
 # ![Gulp Starter](extras/demo/src/images/gulp-starter-logo.png)
 
 [![Build Status](https://travis-ci.org/vigetlabs/gulp-starter.svg?branch=static-server)](https://travis-ci.org/vigetlabs/gulp-starter)
