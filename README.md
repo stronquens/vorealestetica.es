@@ -1,6 +1,7 @@
-This project require node 6 for run gulp.
-All the resources are copyright from Voreal Estética.
-For use the images you need to pay for the license to the author.
+This project require node 6 for run gulp. <br/>
+**The project is property of Voreal Estética. (All rights reserved)**<br/>
+For use the images you need to pay for the license to the author (Not Voreal).<br/>
+Thanks to **Viget** for the boilerplate for gulp.<br/>
 
 
 # ![Gulp Starter](extras/demo/src/images/gulp-starter-logo.png)
